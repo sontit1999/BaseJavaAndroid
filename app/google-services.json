@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "677127043492",
+    "firebase_url": "https://banded-plateau-248103.firebaseio.com",
+    "project_id": "banded-plateau-248103",
+    "storage_bucket": "banded-plateau-248103.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:677127043492:android:f86c819c486c0b8eeee931",
+        "android_client_info": {
+          "package_name": "com.example.testphonefirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "677127043492-211o8lfnnnnc3iplqjasd8d4qstoesm7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgoGdLeboAJMwP8RxfbumjZat-62Lx3Mw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "677127043492-211o8lfnnnnc3iplqjasd8d4qstoesm7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
