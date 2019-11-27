@@ -27,19 +27,6 @@ public class TestActivity extends BaseActivity<ActivityTestBinding,TestViewmodel
     public void setBindingViewmodel() {
           binding.setViewmodel(viewmodel);
           binding.setUser(new User("sonkoi","sontit99"));
-          viewmodel.getName().observe(this, new Observer<String>() {
-              @Override
-              public void onChanged(String s) {
-                  binding.tvName.setText(s);
-                  Log.d("test"," callback from live data");
-              }
-          });
-          binding.btnTest.setOnClickListener(new View.OnClickListener() {
-              @Override
-              public void onClick(View view) {
-                  viewmodel.changeName();
-              }
-          });
           addFragment( new TestFragment());
     }
     public void addFragment(Fragment fragment){

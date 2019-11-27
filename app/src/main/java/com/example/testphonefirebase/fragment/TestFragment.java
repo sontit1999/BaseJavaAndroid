@@ -4,6 +4,7 @@ import androidx.lifecycle.Observer;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.example.testphonefirebase.R;
+import com.example.testphonefirebase.model.Recipe;
 import com.example.testphonefirebase.model.User;
 import com.example.testphonefirebase.base.BaseFragment;
 import com.example.testphonefirebase.databinding.FragmentTestBinding;
@@ -26,15 +27,15 @@ public class TestFragment extends BaseFragment<FragmentTestBinding, Fragviewmode
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         binding.recyclerview.setLayoutManager(layoutManager);
-        binding.recyclerview.setAdapter(viewmodel.adapter);
+        binding.recyclerview.setAdapter(viewmodel.recipeAdapter);
     }
 
     @Override
     public void ViewCreated() {
-        viewmodel.getArr().observe(this, new Observer<ArrayList<User>>() {
+        viewmodel.getRecipe().observe(this, new Observer<ArrayList<Recipe>>() {
             @Override
-            public void onChanged(ArrayList<User> users) {
-                viewmodel.adapter.setList(users);
+            public void onChanged(ArrayList<Recipe> recipes) {
+                viewmodel.recipeAdapter.setList(recipes);
             }
         });
 
